@@ -16,6 +16,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.pacman.MentAlly.R;
+import com.pacman.MentAlly.ui.home.HomeActivity;
 import com.pacman.MentAlly.ui.login.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -44,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+                Intent i = new Intent(SplashActivity.this, HomeActivity.class);
                 Pair[] p = new Pair[1];
                 p[0] = new Pair<View,String>(image, "logoimage");
                 ActivityOptions o = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, p);
